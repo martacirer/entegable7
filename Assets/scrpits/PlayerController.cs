@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour
             {
                 gameOver = true;
                 Debug.Log("GAME OVER");
+                Destroy(othercollider.gameObject);
 
                 Instantiate(explosionParticleSystem,
                     transform.position,
